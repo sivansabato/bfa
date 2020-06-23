@@ -1,4 +1,30 @@
-load('cancer_mortality.mat');
+% To create the data for this analysis, please create a Matlab matrix where
+% the columns are comprised of data downloaded from the United States Cancer
+% Statistics page: https://gis.cdc.gov/Cancer/USCS/DataViz.html 
+% 
+% Note:
+% 1. Make sure to click on the "Table" option, rather than the default map option
+% 2. Select from the dropdown to see cancer deaths or rates of new cancers
+%
+% Each line of the matrix should represent data from one state.
+% The columns of the matrix are:
+% - State population, that is, the number of people in the state (shown in the statistics page above)
+% - Age-adjusted rate of cancer deaths and age-adjusted rate of new cancers, for the following cancers:
+%   - Brain
+%   - Breast
+%   - Colon
+%   - Kidney
+%   - Liver
+%   - Lung
+%   - Oral
+%   - Pancreatic
+%   - Stomach
+%   - Thyroid
+%
+%
+% Missing data should be replaced with NaN
+%
+% The matrix should be of size 51x21
 
 cancer_names = {'Brain','Breast','Colon','Kidney','Liver','Lung','Oral','Pancreatic','Stomach','Thyroid'};
 
